@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Application Submission</title>
+</head>
+<body>
+
+<u><h2>Job Application</h2></u>
+
+<p>Please log in below to check the status of your application!<p>
+
+<form action="process.php" method="POST" >
+
+	Username:
+	<input type="text" name="username" />
+	<p><p>
+	Password:
+	<input type="password" name="password" />
+	<p><p>
+	
+	Have you applied for a job here within the past 90 days?
+	<p><p>
+	<input type="radio" name="status" /> Yes
+	<br />
+	<input type="radio" name="status" /> No
+	<p><p>
+	
+	Have you worked in retail before?
+	<p><p>
+	<select name="retail">
+	<option value="yes">Yes</option>
+	<option value="no">No</option>
+	<option value="maybe">I do not wish to disclose that information.</option>
+	</select>
+	<p><p>
+	
+	
+	Jobs Acquiring For: (Check all that apply)
+	<p><p>
+	<input type="checkbox" name="cashier" /> Cashier
+	<br />
+	<input type="checkbox" name="shelf_stocker" /> Shelf Stocker
+	<br />
+	<input type="checkbox" name="customer_service_representative" /> Customer Service Representative
+	<br />
+	<input type="checkbox" name="greeter" /> Greeter
+	<br />
+	<input type="checkbox" name="deli" /> Deli
+	<br />
+	<input type="checkbox" name="produce" /> Produce
+	<p><p>
+	
+
+<u><h2>Contact Us</h2></u>
+	<p>Please use this form to send us an e-mail! (To send message to more than one person hold down the control key while selecting)</p>
+		Name: <input type="text" name="sender" />
+		<p></p>
+		Recipient:
+		<select name="staff" size ="2" multiple="multiple">
+		<option value="hiring_manager">Sarah Supermarket</option>
+		<option value="assistant_manager">Debby Department</option>
+		<option value="store_owner">Doug Dimmadome</option>
+		<option value="it_services">Ted Tech</option>
+		</select>
+		<p></p>
+				
+		Please enter your feedback for the hiring process:
+		<p></p>
+		<textarea rows="20" cols="80" name="message_body">Any feedbacks will not affect the status of your application.</textarea>
+		<p></p>
+			
+	<input type="submit" name="submit" value="Submit" />
+</form>
+
+
+
+</body>
+</html>
